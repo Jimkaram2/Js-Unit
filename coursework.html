@@ -52,7 +52,24 @@
 
 		function clearMessage() {document.getElementById('messageclear').style.display = 'none';}
 		</script>
-	</div>	
+		
+		<div id="Lamp">
+		<button id="lampOnBtn">Turn On Lamp</button>
+<button id="lampOffBtn">Turn Off Lamp</button>
+<script>
+  const lampOnBtn = document.getElementById("lampOnBtn");
+  const lampOffBtn = document.getElementById("lampOffBtn");
+  const lamp = document.getElementById("lamp");
+
+  lampOnBtn.addEventListener("click", function () {
+    lamp.style.transform = "rotate(45deg)";
+  });
+
+  lampOffBtn.addEventListener("click", function () {
+    lamp.style.transform = "rotate(0deg)";
+  });
+</script>
+</div>	
 	<h1> Coursework </h1>
 		<p>
 		This page will contain information on the coursework to help you improve your grade
