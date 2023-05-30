@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>
-		Mr McAlpines Computing Blog
-	</title>
-	
+	<title>Mr McAlpines Computing Blog</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -14,69 +11,66 @@
 
 	<div id="nav">
 		<ul>
-			<li> 
-				<a href="index.html"> Home </a> 
-			</li>
-			<li> 
-				<a href="isdd.html"> ISDD </a> 
-			</li>
-			<li> 
-				<a href="sdd.html"> SDD </a> 
-			</li>
-			<li> 
-				<a href="coursework.html"> Coursework </a> 
-			</li>
-			<li> 
-				<a href="revision.html"> Revision </a>  
-			</li>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="isdd.html">ISDD</a></li>
+			<li><a href="sdd.html">SDD</a></li>
+			<li><a href="coursework.html">Coursework</a></li>
+			<li><a href="revision.html">Revision</a></li>
 		</ul>
 	</div>
+
 	<div id="message">
-		<button type="button" onClick="addMessage();"> Motivating Comment </button>
+		<button type="button" onClick="addMessage();">Motivating Comment</button>
 		<script>
-		function addMessage() {document.getElementById('message').innerText = 'You should get 100% no problem!';}
+			function addMessage() {
+				document.getElementById('message').innerText = 'You should get 100% no problem!';
+			}
 		</script>
 	</div>
-	<div id="message 2">
-	<button type="button" onClick="addMessage2();">Button 2</button>
-	<script>
-	function addMessage2() {document.getElementById('message 2').innerText = 'I like soccer';}
-	</script>
+
+	<div id="message2">
+		<button type="button" onClick="addMessage2();">Button 2</button>
+		<script>
+			function addMessage2() {
+				document.getElementById('message2').innerText = 'I like soccer';
+			}
+		</script>
 	</div>
+
 	<div id="pageInfo">
-	<div id="messageclear">
-		Remove Message -->
-			
-		<button type="button" onclick="clearMessage()">Clear</button>
-		<script>
+		<div id="messageclear">
+			Remove Message -->
+			<button type="button" onclick="clearMessage()">Clear</button>
+			<script>
+				function clearMessage() {
+					document.getElementById('messageclear').style.display = 'none';
+				}
+			</script>
+		</div>
 
-		function clearMessage() {document.getElementById('messageclear').style.display = 'none';}
-		</script>
-		
-		<div id="Lamp">
-		<button id="lampOnBtn">Turn On Lamp</button>
-<button id="lampOffBtn">Turn Off Lamp</button>
-<script>
-  const lampOnBtn = document.getElementById("lampOnBtn");
-  const lampOffBtn = document.getElementById("lampOffBtn");
-  const lamp = document.getElementById("lamp");
+		<div id="lamp">
+			<button id="lampOnBtn">Turn On Lamp</button>
+			<button id="lampOffBtn">Turn Off Lamp</button>
+			<script>
+				const lampOnBtn = document.getElementById("lampOnBtn");
+				const lampOffBtn = document.getElementById("lampOffBtn");
+				const lamp = document.getElementById("lamp");
 
-  lampOnBtn.addEventListener("click", function () {
-    lamp.style.transform = "rotate(45deg)";
-  });
+				lampOnBtn.addEventListener("click", function () {
+					lamp.style.transform = "rotate(45deg)";
+				});
 
-  lampOffBtn.addEventListener("click", function () {
-    lamp.style.transform = "rotate(0deg)";
-  });
-</script>
-</div>	
-	<h1> Coursework </h1>
+				lampOffBtn.addEventListener("click", function () {
+					lamp.style.transform = "rotate(0deg)";
+				});
+			</script>
+		</div>
+
+		<h1>Coursework</h1>
 		<p>
-		This page will contain information on the coursework to help you improve your grade
-
-
-		Your coursework counts for 40% of the overall grade which you will achieve.</p>
+			This page will contain information on the coursework to help you improve your grade.
+			Your coursework counts for 40% of the overall grade which you will achieve.
+		</p>
 	</div>
 </body>
-
 </html>
