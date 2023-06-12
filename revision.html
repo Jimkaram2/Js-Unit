@@ -42,6 +42,25 @@ This area will take you to some revision quizzes which you can try
 
 <a href="http:///www.quizlet.com/cmcalpine"> HERE </a>
 </div>
+ <div id="question">
+      <button type="button" onclick="displayQuestion()">
+        Display question
+      </button>
+      <script>
+        function displayQuestion() {
+          var revealed = false;
+          if (revealed == false) {
+            revealed = true;
+            document.getElementById("question").innerText =
+              "What does RAM stand for? ";
+          } else {
+            revealed = false;
+            document.getElementById("question").innerText =
+              "What does RAM stand for?";
+          }
+        }
+      </script>
+    </div>	
 </body>
 
 </html>
