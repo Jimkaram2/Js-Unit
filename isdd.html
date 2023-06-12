@@ -30,30 +30,20 @@
     </div>
 
     <div id="pageInfo">
-      <h1>Revision</h1>
+      <h1>ISDD</h1>
       <p>
-        This area will take you to some revision quizzes which you can try
-
-        <a href="http:///www.quizlet.com/cmcalpine"> HERE </a>
+        The Information Systems Design and Development section of the course is
+        mostly covered by Databases and Web Design.
       </p>
     </div>
-
     <div id="question">
-      <button type="button" onclick="displayQuestion()">
-        Display question
+      <button type="button" onclick="dynamicMessage()">
+        Display personal question
       </button>
       <script>
-        function displayQuestion() {
-          var revealed = false;
-          if (revealed == false) {
-            revealed = true;
-            document.getElementById("question").innerText =
-              "What does RAM stand for? ";
-          } else {
-            revealed = false;
-            document.getElementById("question").innerText =
-              "What does RAM stand for?";
-          }
+        function dynamicMessage() {
+          var username = prompt("What is your name?");
+          alert(username + " I hope you have been revising!");
         }
       </script>
     </div>
